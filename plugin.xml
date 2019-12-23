@@ -56,7 +56,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </podspec>
     </platform>
 
-    <platform name="android">
+    <!--platform name="android">
         <preference name="FIREBASE_ANALYTICS_VERSION" default="17.2.+"/>
         <preference name="FIREBASE_MESSAGING_VERSION" default="20.0.+"/>
         <preference name="ANDROIDX_CORE_VERSION" default="1.0.+"/>
@@ -88,6 +88,6 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             target-dir="src/by/chemerisuk/cordova/firebase/" />
         <source-file src="src/android/FirebaseMessagingPluginService.java"
             target-dir="src/by/chemerisuk/cordova/firebase" />
-    </platform>
+    </platform-->
 
 </plugin>
