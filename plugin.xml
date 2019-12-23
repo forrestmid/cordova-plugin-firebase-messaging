@@ -61,14 +61,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <preference name="FIREBASE_MESSAGING_VERSION" default="20.0.+"/>
         <preference name="ANDROIDX_CORE_VERSION" default="1.0.+"/>
 
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="app/src/main/res/xml/config.xml" parent="/*">
             <feature name="FirebaseMessaging">
                 <param name="android-package" value="by.chemerisuk.cordova.firebase.FirebaseMessagingPlugin" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
 
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest/application">
             <service android:name="by.chemerisuk.cordova.firebase.FirebaseMessagingPluginService">
                 <intent-filter>
                     <action android:name="com.google.firebase.MESSAGING_EVENT"/>
